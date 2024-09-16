@@ -28,7 +28,7 @@ function changeSize(input) {
     }
 } 
 
-//changing color
+//Changing color
 function changeColor(choice) {
     color = choice;
 }
@@ -42,6 +42,7 @@ function colorSquare() {
     }
 }
 
+//Reset button
 function resetBoard() {
     let board = document.querySelector(".board");
     let squares = board.querySelectorAll("div");
