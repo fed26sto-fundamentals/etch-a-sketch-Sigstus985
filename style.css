@@ -1,22 +1,47 @@
-body{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-div{
-    height: auto;
-    width: auto;
-    aspect-ratio: 1/1;
-}
-
-#container{
+.board{
+    height: 800px;
+    width: 800px;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
-    border: black solid 1px;
-    width:700px;
-    height: 700px;
-    background-color: lightgray;
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+button{
+    margin: 10px;
+    border: none;
+    width: 100px;
+    aspect-ratio: 3/1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#Black{
+    background-color: black;
+    color: beige;
+    
+}
+
+#Eraser{
+    background-color: gray;
+    color: beige;
+}
+
+#Random{
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,246,0,1) 20%, rgba(0,255,10,1) 40%, rgba(0,255,229,1) 60%, rgba(6,23,223,1) 80%, rgba(237,0,255,1) 100%); 
+}
+
+#Reset{
+    background-color: gray;
+    color: beige;
 }
